@@ -333,6 +333,69 @@ footer{
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease;}
 .reveal.vis{opacity:1;transform:translateY(0);}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+
+  /* NAV */
+  nav{padding:12px 20px;}
+  .nav-links{display:none;}
+  .logo{font-size:13px;letter-spacing:2px;}
+  .lang-toggle{margin-left:auto;}
+
+  /* HERO */
+  .hero{padding:100px 20px 40px;min-height:auto;flex-direction:column;gap:0;}
+  .hero-bg-text{font-size:60px;letter-spacing:-3px;}
+  .hero-hebrew{display:none;}
+  .hero-title{font-size:48px;letter-spacing:-2px;margin-bottom:16px;}
+  .hero-title-sub{font-size:11px;margin-bottom:12px;}
+  .hero-eyebrow{font-size:9px;margin-bottom:12px;}
+  .hero-desc{font-size:14px;max-width:100%;margin-bottom:24px;}
+  .hero-bottom{flex-direction:column;align-items:flex-start;gap:20px;}
+  .hero-cta-group{flex-direction:column;width:100%;}
+  .btn-gold,.btn-outline{width:100%;text-align:center;padding:14px;}
+  .scroll-hint{display:none;}
+
+  /* MARQUEE */
+  .marquee-item{font-size:9px;padding:0 18px;}
+
+  /* CAROUSEL */
+  .carousel-section{padding:40px 0;}
+  .carousel-label{padding:0 20px 20px;}
+  .carousel-card{width:160px;height:210px;}
+
+  /* ABOUT */
+  .about-section{grid-template-columns:1fr;min-height:auto;}
+  .about-left{padding:48px 20px 32px;border-right:none;border-bottom:1px solid var(--border);}
+  .about-right{padding:32px 20px 48px;}
+  .section-heading{font-size:32px;letter-spacing:-1px;}
+  .stat-grid{grid-template-columns:1fr 1fr;gap:12px;}
+  .stat-num{font-size:28px;}
+
+  /* SERVICES */
+  .features-section{padding:48px 20px;}
+  .features-header{flex-direction:column;align-items:flex-start;gap:12px;margin-bottom:32px;}
+  .features-grid{grid-template-columns:1fr;}
+  .feat{padding:24px 20px;}
+
+  /* QUOTE */
+  .quote-section{padding:48px 20px;}
+  .quote-inner{grid-template-columns:1fr;gap:36px;}
+  .f-row{grid-template-columns:1fr;}
+  .form-wrap{width:100%;}
+
+  /* FOOTER */
+  footer{padding:28px 20px;flex-direction:column;align-items:flex-start;gap:12px;}
+  .footer-links{gap:16px;flex-wrap:wrap;}
+}
+
+/* ── SMALL PHONES ── */
+@media (max-width: 400px) {
+  .hero-title{font-size:38px;}
+  .carousel-card{width:140px;height:185px;}
+  .stat-grid{grid-template-columns:1fr 1fr;}
+}
+
 </style>
 </head>
 <body>
@@ -437,9 +500,9 @@ footer{
     <div class="quote-left">
       <h2 class="section-heading" data-en="Get a<br><em>Quote</em>" data-he="קבל<br><em>הצעת מחיר</em>">Get a<br><em>Quote</em></h2>
       <p class="body-text" id="q-desc">Tell us about your project and we'll get back to you within 24 hours with pricing and timeline.</p>
-      <p class="body-text" style="margin-top:16px;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gold);">Yosef@cymarketingsolutions.com</p>
+      <p class="body-text" style="margin-top:16px;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--gold);">info@cymarketingsolutions.com</p>
     </div>
-    <form class="form-wrap" action="https://formspree.io/f/mnjypwga" method="POST" onsubmit="handleSubmit(event)">
+    <form class="form-wrap" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event)">
       <div class="f-row">
         <div class="f-group"><label class="f-label">Organization</label><input class="f-input" type="text" name="organization" placeholder="Agency or company name" required></div>
         <div class="f-group"><label class="f-label">Contact Name</label><input class="f-input" type="text" name="name" placeholder="Your full name" required></div>
@@ -469,7 +532,7 @@ footer{
     <a href="#clients">Clients</a>
     <a href="#quote">Contact</a>
   </div>
-  <div style="font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--muted);">© 2019–2026 C&amp;Y MARKETING SOLUTIONS</div>
+  <div style="font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--muted);">© 2019–2025 C&amp;Y MARKETING SOLUTIONS</div>
 </footer>
 
 <script>
